@@ -1,3 +1,65 @@
-theme: jekyll-theme-merlot
-title: 🎈星月相随🎈's homepage
-description: Bookmark this to keep an eye on my project updates!
+
+title: 宁静致远
+author: yuchuanfeng
+email: your-email@domain.com
+description: ""
+show_excerpts: true # set to true to show excerpts on the homepage
+# baseurl: /texture
+
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+sass:
+  sass_dir: _sass
+
+paginate: 15
+paginate_path: "page/:num"
+baseurl: ""
+
+permalink: /posts/:title/
+
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      styles : [highlight.css, tags.css]
+      scripts : [tags.js, script.js]
+
+
+texture:
+  title: 宁静致远
+  tagline: Developer. iOS
+  date_format: "%b %-d, %Y" #"%Y-%m-%d"
+  style: black
+  showNav: true
+  showPicker: false
+
+  # generate social links in footer
+  social_links:
+    twitter: chrisyu0229
+    github:  yuchuanfeng
+    weibo: 6189403394
+    email: yuchuanfeng89@gmail.com
+github:
+  username: SimpleSimpleDesign
+gitalk:
+  repo: SimpleSimpleDesign.github.io
+  client_id: 3fa2380c333ebb094ea8
+  client_secret: b6e5fd28f495bddaca9c5d7e0cfd36bbf6af9383
+
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+#header_pages:
+# - about.md
+
+# Build settings
+# theme: texture
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+#  - jekyll-feed
